@@ -24,12 +24,22 @@ main{max-width:1100px;margin:0 auto;padding:0 28px}header.hero{padding:74px 0 63
 .group-title{display:flex;align-items:center;gap:12px;margin:34px 0 7px;padding-bottom:9px;border-bottom:1px solid var(--line);font:400 24px/1.3 Georgia,"Times New Roman",serif;letter-spacing:-.02em}.group-title::before{content:"";display:block;width:20px;height:2px;background:var(--accent)}
 .group-caption{color:var(--muted);font-size:12px;margin:0 0 8px}.refs{list-style:none;margin:0;padding:0}.ref{display:grid;grid-template-columns:42px minmax(0,1fr);gap:18px;padding:21px 0;border-bottom:1px solid var(--line)}.ref:last-child{border-bottom:0}.ref-num{font:14px/1.6 Georgia,"Times New Roman",serif;color:var(--accent)}.ref-main{min-width:0}.ref-meta{display:flex;gap:9px;align-items:center;flex-wrap:wrap;font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:9px}.ref-meta .pill{background:var(--soft);color:#514e48;padding:3px 8px;border-radius:2px}.ref-text{margin:0;font-size:14px;line-height:1.8;overflow-wrap:anywhere;word-break:keep-all}.ref-detail{font-size:12px;color:var(--muted);margin:4px 0 0}.ref-tools{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:11px}
 .tool-link,.copy-btn{background:none;border:0;padding:0;color:var(--accent);font-size:12px;font-weight:650;text-decoration:none;cursor:pointer}.tool-link:hover,.copy-btn:hover{text-decoration:underline}.tool-link:after{content:" ↗"}
-.placeholder{margin-top:24px;background:#fff;border:1px dashed #cfc9c1;padding:17px 20px;color:#655f58;font-size:12px}.placeholder b{color:var(--ink)}.empty{padding:45px 10px;font-size:14px;color:var(--muted);text-align:center}
+.empty{padding:45px 10px;font-size:14px;color:var(--muted);text-align:center}
 .notes{margin:38px 0 75px;padding:24px 26px;border-left:3px solid var(--accent);background:#f0eeea}.notes h3{font-size:13px;font-weight:750;letter-spacing:.03em;margin:0 0 8px}.notes p{font-size:12px;color:#55514d;line-height:1.8;margin:0}
 footer{background:#1d1d1b;color:#fff}.footer-inner{max-width:1100px;margin:auto;padding:40px 28px 45px;display:flex;justify-content:space-between;gap:30px;align-items:end;flex-wrap:wrap}.footer-title{font:29px Georgia,"Times New Roman",serif;letter-spacing:-.04em}.footer-caption{font-size:11px;color:#b8b7b1;margin-top:6px}.back{color:#fff;text-decoration:none;font-size:12px;border-bottom:1px solid #84837c;padding-bottom:3px}
 [hidden]{display:none!important}
 @media(max-width:660px){.topbar-inner,main,.footer-inner{padding-left:20px;padding-right:20px}header.hero{padding:51px 0 43px}.hero h1{font-size:clamp(48px,13vw,74px);letter-spacing:-.056em;margin-top:25px}.korean-title{font-size:15px}.english-title{font-size:13px}.hero-bottom{padding-top:23px;margin-top:28px}.toolbar{padding:20px 0 15px}.tabs{gap:7px}.filter{font-size:11px;padding:7px 10px}.search{width:100%}.section{padding:43px 0 26px}.ref{grid-template-columns:28px minmax(0,1fr);gap:9px;padding:20px 0}.ref-text{font-size:13px}.section-heading h2{font-size:37px}.notes{margin:27px 0 55px;padding:18px 20px}}
 @media print{body{background:#fff}.toolbar,.ref-tools,.back{display:none!important}.hero{padding-top:22px!important;padding-bottom:25px!important}.ref{break-inside:avoid}.section{padding-top:24px}footer{background:#fff;color:#111}.footer-caption{color:#666}a{color:#111}}
+
+
+/* Authors and expanded categories */
+.authors{display:flex;flex-wrap:wrap;gap:5px 17px;margin:29px 0 0;padding:18px 0 0;border-top:1px solid var(--line);font-size:12px;color:#615d57;line-height:1.7}
+.authors-label{font-size:10px;font-weight:800;letter-spacing:.12em;color:var(--accent);margin-right:5px;align-self:center}
+.hero-bottom{margin-top:18px;border-top:0;padding-top:14px}
+.tool-link+.tool-link{margin-left:3px}
+.ref-tools{gap:10px 20px}
+.ref-num{font-variant-numeric:tabular-nums}
+@media(max-width:660px){.authors{font-size:11.5px;margin-top:24px;gap:6px 14px}.authors-label{width:100%}.hero-bottom{margin-top:16px;padding-top:0}.toolbar{align-items:stretch}.tabs{width:100%}}
 
   </style>
 </head>
@@ -41,357 +51,677 @@ footer{background:#1d1d1b;color:#fff}.footer-inner{max-width:1100px;margin:auto;
       <h1>References<br><em>&amp; Sources.</em></h1>
       <p class="korean-title">크리에이티브 디렉터 교체에 따른 럭셔리 패션 하우스의 브랜드 정체성 재구성 연구 — 2026 S/S 데뷔 컬렉션을 중심으로</p>
       <p class="english-title">Reconstructing Brand Identity in Luxury Fashion Houses Following Creative Director Changes — Focusing on the 2026 S/S Debut Collections</p>
-      <div class="hero-bottom"><span><b>RESEARCH CASES</b> &nbsp; Chanel · Dior · Gucci</span><span><b>COLLECTION</b> &nbsp; 2026 Spring / Summer</span><span><b>FORMAT</b> &nbsp; Academic references &amp; visual sources</span></div>
+      <p class="authors"><span class="authors-label">RESEARCH AUTHORS</span><span>문소영 (성균관대학교 융합정보디자인학과 석사)</span><span>김세은 (성균관대학교 의상학과 부교수)</span><span>김정미 (성균관대학교 의상학과 겸임교수)</span></p>
+      <div class="hero-bottom"><span><b>RESEARCH CASES</b> &nbsp; Chanel · Dior · Gucci</span><span><b>COLLECTION</b> &nbsp; 2026 Spring / Summer</span><span><b>FORMAT</b> &nbsp; Reference library &amp; sources</span></div>
     </header>
     <nav class="toolbar" aria-label="참고문헌 필터">
-      <div class="tabs"><button type="button" class="filter active" data-filter="all" aria-pressed="true">전체</button><button type="button" class="filter" data-filter="academic" aria-pressed="false">학술 문헌</button><button type="button" class="filter" data-filter="collection" aria-pressed="false">컬렉션 · 이미지</button></div>
+      <div class="tabs"><button type="button" class="filter active" data-filter="all" aria-pressed="true">전체</button><button type="button" class="filter" data-filter="academic" aria-pressed="false">학술 문헌</button><button type="button" class="filter" data-filter="collection" aria-pressed="false">컬렉션 · 이미지</button><button type="button" class="filter" data-filter="official" aria-pressed="false">공식 홈페이지</button><button type="button" class="filter" data-filter="articles" aria-pressed="false">기사</button></div>
       <input id="search" class="search" type="search" autocomplete="off" aria-label="참고문헌 검색" placeholder="저자, 시즌, 브랜드 검색...">
     </nav>
     <p class="total" id="count" aria-live="polite"></p>
     <section class="section" id="academic-section">
       <div class="section-heading"><h2>Academic Literature</h2><span class="section-num">01 / 논문 및 연구문헌</span></div>
-      <p class="section-desc">기존 페이지의 학술 참고문헌을 유지했습니다. 제출 전에 서지정보·DOI·인용 형식을 확인해 주세요.</p>
       <ol id="academic-list" class="refs"></ol>
     </section>
     <section class="section" id="collection-section">
       <div class="section-heading"><h2>Runway &amp; Visual Sources</h2><span class="section-num">02 / 컬렉션 자료</span></div>
-      <p class="section-desc">포스터의 2026 S/S 데뷔 컬렉션과 비교 분석에 사용한 과거 RTW 컬렉션을 모았습니다. 컬렉션 제목 아래 출처 링크를 누르면 Vogue Runway의 해당 시즌 페이지가 열립니다.</p>
       <h3 class="group-title" id="main-heading">2026 S/S Debut Collections</h3>
       <p class="group-caption" id="main-caption">연구 대상 하우스 — Chanel, Christian Dior, Gucci</p>
       <ol id="main-list" class="refs"></ol>
       <h3 class="group-title" id="archive-heading">Archive / Past RTW Collections</h3>
       <p class="group-caption" id="archive-caption">포스터에 표시된 브랜드 아카이브 및 신임 디렉터의 이전 하우스 컬렉션</p>
       <ol id="archive-list" class="refs"></ol>
-      <div class="placeholder" id="archive-note"><b>아카이브 링크 확인 안내</b><br>위 링크는 시즌 단위 컬렉션 페이지입니다. 포스터의 개별 사진과 해당 시즌 페이지 내 Look 번호를 일대일로 연결한 것은 아니므로, 최종 제출 전 Look 번호 및 촬영자 크레디트를 확인해 주세요.</div>
     </section>
-    <aside class="notes"><h3>Reference Note</h3><p>이 페이지는 학술 포스터의 참고문헌 및 주요 컬렉션 자료를 확인하기 위한 자료 목록입니다. 외부 링크의 이미지·텍스트 저작권은 각 원저작자 및 매체에 있으며, 포스터에 인용된 개별 이미지에 대한 정확한 크레디트와 Look 번호는 원본에서 별도 확인해야 합니다. 웹페이지 내용은 이 파일을 수정하여 언제든 갱신할 수 있습니다.</p></aside>
+    <section class="section" id="official-section">
+      <div class="section-heading"><h2>Official Website</h2><span class="section-num">03 / 브랜드 공식 홈페이지</span></div>
+      <p class="section-desc">연구 대상 브랜드의 공식 컬렉션 페이지 및 하우스 아카이브입니다.</p>
+      <ol id="official-list" class="refs"></ol>
+    </section>
+    <section class="section" id="articles-section">
+      <div class="section-heading"><h2>Articles</h2><span class="section-num">04 / 매체 기사</span></div>
+      <p class="section-desc">브랜드별 데뷔 컬렉션에 관한 리뷰와 관련 기사입니다.</p>
+      <ol id="articles-list" class="refs"></ol>
+    </section>
+    <p id="no-results" class="empty" hidden>검색 조건에 맞는 자료가 없습니다.</p>
+    <aside class="notes"><h3>Reference Note</h3><p>이 페이지는 학술 포스터의 학술 문헌, 컬렉션 및 시각 자료, 공식 홈페이지, 매체 기사를 확인하기 위한 참고자료 목록입니다. 외부 링크의 이미지·텍스트 저작권은 각 원저작자 및 매체에 있으며, 포스터에 인용된 개별 이미지에 대한 정확한 크레디트와 Look 번호는 원본에서 별도 확인해야 합니다.</p></aside>
   </main>
   <footer><div class="footer-inner"><div><div class="footer-title">Creative Director Changes<br>in 2026 S/S</div><div class="footer-caption">Supplementary References · Research Poster</div></div><a class="back" href="#top">Back to top ↑</a></div></footer>
   <script>
-    // ================================================================
-    // 참고문헌 수정 안내
-    // 아래 references 배열의 citation(제목), detail(설명), url(링크) 수정.
-    // group: "academic" / "main" / "archive"
-    // 파일명 index.html 그대로 GitHub 저장소에 업로드 후 Commit하세요.
-    // ================================================================
+
+    // Poster reference library. To update sources, edit the references array below.
+    // Only external https links are opened; text uses textContent to avoid HTML injection.
     const references = [
   {
     "type": "academic",
-    "tag": "논문",
-    "citation": "Ahn, S. H. (2014, January 20). From creator to multitasking director: Opening of the ‘Creative + α’ new CD era. Fashion Biz.",
-    "url": "",
-    "group": "academic"
-  },
-  {
-    "type": "academic",
-    "tag": "논문",
-    "citation": "Bae, W. R., Kim, Y. K., & Lee, K. H. (2021). A study on design characteristics of Chanel’s and Fendi’s collections under the direction of Karl Lagerfeld. The Korean Fashion and Textile Research Journal, 23(6), 709–725.",
-    "url": "https://doi.org/10.5805/SFTI.2021.23.6.709",
-    "group": "academic"
-  },
-  {
-    "type": "academic",
-    "tag": "논문",
-    "citation": "Baek, J. H., & Bae, S. J. (2019). A study of strategic brand identity innovation of Gucci through the change of creative director. Journal of the Korean Society of Design Culture, 25(1), 185–198.",
-    "url": "https://doi.org/10.18208/ksdc.2019.25.1.185",
-    "group": "academic"
-  },
-  {
-    "type": "academic",
-    "tag": "논문",
-    "citation": "Heine, K. (2010). The personality of luxury fashion brands. Journal of Global Fashion Marketing, 1(3), 154–163.",
-    "url": "https://doi.org/10.1080/20932685.2010.10593067",
-    "group": "academic"
-  },
-  {
-    "type": "academic",
-    "tag": "논문",
-    "citation": "Kim, J. Y., & Ahn, H. S. (2021). Modern reinterpretation and succession of Balenciaga design by Demna Gvasalia. The Research Journal of the Costume Culture, 29(2), 185–203.",
-    "url": "https://doi.org/10.29049/rjcc.2021.29.2.185",
-    "group": "academic"
-  },
-  {
-    "type": "academic",
-    "tag": "논문",
-    "citation": "Kwon, Y., & Lee, J. S. (2025). A comparative analysis of color attributes in luxury fashion brands across creative director transitions. Journal of the Korean Society of Clothing and Textiles, 49(4), 696–711.",
+    "tag": "학술 문헌",
+    "citation": "Kwon, Y., & Lee, J. S. (2025). A comparative analysis of color attributes in luxury fashion brands across creative director transitions. Journal of the Korean Society of Clothing and Textiles, 49(4), 696-711.",
     "url": "https://doi.org/10.5850/JKSCT.2025.49.4.696",
     "group": "academic"
   },
   {
     "type": "academic",
-    "tag": "논문",
-    "citation": "Oh, C.-I., & Lee, H.-W. (2006). Exploratory research on creative director’s core competence in an ad agency. Archives of Design Research, 19(5), 5–16.",
-    "url": "",
-    "group": "academic"
-  },
-  {
-    "type": "academic",
-    "tag": "논문",
-    "citation": "Park, J.-H., & Lee, J.-M. (2010). The role of fashion creative director. Journal Korea Design Forum, 28, 221–230.",
+    "tag": "학술 문헌",
+    "citation": "Park, J.-H., & Lee, J.-M. (2010). The role of fashion creative director. Journal Korea Design Forum, 28, 221-230.",
     "url": "https://doi.org/10.21326/ksdt.2010..28.020",
     "group": "academic"
   },
   {
     "type": "academic",
-    "tag": "논문",
+    "tag": "학술 문헌",
+    "citation": "Bae, W. R., Kim, Y. K., & Lee, K. H. (2021). A study on design characteristics of Chanel’s and Fendi’s collections under the direction of Karl Lagerfeld. The Korean Fashion and Textile Research Journal, 23(6), 709-725.",
+    "url": "https://doi.org/10.5805/SFTI.2021.23.6.709",
+    "group": "academic"
+  },
+  {
+    "type": "academic",
+    "tag": "학술 문헌",
+    "citation": "Baek, J. H., & Bae, S. J. (2019). A study of strategic brand identity innovation of Gucci through the change of creative director. Journal of the Korean Society of Design Culture, 25(1), 185-198.",
+    "url": "https://doi.org/10.18208/ksdc.2019.25.1.185",
+    "group": "academic"
+  },
+  {
+    "type": "academic",
+    "tag": "학술 문헌",
+    "citation": "Heine, K. (2010). The personality of luxury fashion brands. Journal of Global Fashion Marketing, 1(3), 154-163.",
+    "url": "https://doi.org/10.1080/20932685.2010.10593067",
+    "group": "academic"
+  },
+  {
+    "type": "academic",
+    "tag": "학술 문헌",
+    "citation": "Kim, J. Y., & Ahn, H. S. (2021). Modern reinterpretation and succession of Balenciaga design by Demna Gvasalia. The Research Journal of the Costume Culture, 29(2), 185-203.",
+    "url": "https://doi.org/10.29049/rjcc.2021.29.2.185",
+    "group": "academic"
+  },
+  {
+    "type": "academic",
+    "tag": "학술 문헌",
+    "citation": "Rizki, Fitto & Tuti, Assoc. Prof. Dr. Meylani. (2025). Decoding Brand Success: The Impact of Identity on Image, Trust, and Loyalty. Jurnal Dinamika Manajemen. 16. 202-216.",
+    "url": "https://doi.org/10.15294/jdm.v16i1.19283",
+    "group": "academic"
+  },
+  {
+    "type": "academic",
+    "tag": "학술 문헌",
+    "citation": "Zhou, X., Xiao, C., Yoon, S., & Zhu, H. (2026). The color of status: Color saturation, brand heritage, and perceived status of luxury brands. Journal of Consumer Research, 52(6), 1232-1253.",
+    "url": "https://doi.org/10.1093/jcr/ucaf029",
+    "group": "academic"
+  },
+  {
+    "type": "academic",
+    "tag": "학술 문헌",
     "citation": "Peirson-Smith, A., & Peirson-Smith, B. (2020). Fashion archive fervour: The critical role of fashion archives in preserving, curating, and narrating fashion. Archives and Records, 41(3), 274–298.",
     "url": "https://doi.org/10.1080/23257962.2020.1813556",
     "group": "academic"
   },
   {
     "type": "academic",
-    "tag": "논문",
-    "citation": "Rizki, F., & Tuti, M. (2025). Decoding brand success: The impact of identity on image, trust, and loyalty. JDM (Jurnal Dinamika Manajemen), 16(1), 202–216.",
-    "url": "",
+    "tag": "학술 문헌",
+    "citation": "Da Silveira, C., Lages, C., & Simões, C. (2013). Reconceptualizing brand identity in a dynamic environment. Journal of Business Research, 66(1), 28–36.",
+    "url": "https://doi.org/10.1016/j.jbusres.2011.07.020",
     "group": "academic"
   },
   {
     "type": "academic",
-    "tag": "논문",
-    "citation": "Zhou, X., Xiao, C., Yoon, S., & Zhu, H. (2026). The color of status: Color saturation, brand heritage, and perceived status of luxury brands. Journal of Consumer Research, 52(6), 1232–1253.",
-    "url": "https://doi.org/10.1093/jcr/ucaf029",
+    "tag": "학술 문헌",
+    "citation": "Sungmi Shin, & Hyewon Park. (2021). Identity and Archive Inheritance of Fashion Brand <Versace> -Focusing on Donatella Versace Milano Collection from 2018 to 2021-. Journal of Fashion Business, 25(4), 61–78.",
+    "url": "https://doi.org/10.12940/jfb.2021.25.4.61",
+    "group": "academic"
+  },
+  {
+    "type": "academic",
+    "tag": "학술 문헌",
+    "citation": "Díaz Soloaga, P., Muñoz Domínguez, G., & Zhou, J. (2023). Legacy transmission through fashion films: Visual and narrative brand heritage integration. Journal of Global Fashion Marketing, 14(4), 429–448.",
+    "url": "https://doi.org/10.1080/20932685.2023.2214164",
+    "group": "academic"
+  },
+  {
+    "type": "academic",
+    "tag": "학술 문헌",
+    "citation": "Bu Young Song, Yoon-Kyoung Kim and LEE,KYOUNG-HEE. (2021). A Study on the Design and Style of Men's Wear Brands through the Replacement of Creative Directors - Focusing on the Louis Vuitton -. The Korean Fashion and Textile Research Journal, 23(4), 423-438.",
+    "url": "https://doi.org/10.5805/SFTI.2021.23.4.423",
+    "group": "academic"
+  },
+  {
+    "type": "academic",
+    "tag": "학술 문헌",
+    "citation": "Hyosun An, & Minjung Park. (2019). Comparison of Design Related Issues with the Replacement of Fashion Creative Director : - Focused on an Analysis of Social Media Posts on Gucci Collection -. Fashion & Textile Research Journal, 21(3), 277-287.",
+    "url": "https://doi.org/10.5805/SFTI.2019.21.3.277",
+    "group": "academic"
+  },
+  {
+    "type": "academic",
+    "tag": "학술 문헌",
+    "citation": "Yu-Sun Her and Chun Jae Hoon. (2017). Analysis on Magazine Advertisements of Fashion Brands which Replaced Creative Directors - Focused on ‘Saint Laurent’, ‘Louis Vuitton’, and ‘Gucci’ -. The Korean Fashion and Textile Research Journal, 19(5), 547-558.",
+    "url": "https://doi.org/10.5805/SFTI.2017.19.5.547",
+    "group": "academic"
+  },
+  {
+    "type": "academic",
+    "tag": "학술 문헌",
+    "citation": "Eunkyung Park. (2025). Design Characteristics of Loewe - Focused on Women’s Fashion Design by Creative Director Jonathan Anderson - . Korean Society of Fashion Design, 25(1), 15-33.",
+    "url": "http://dx.doi.org/10.18652/2025.25.1.2",
+    "group": "academic"
+  },
+  {
+    "type": "academic",
+    "tag": "학술 문헌",
+    "citation": "Se-lin Choi, Wol-hee Do, & Mi-suk Lee. (2018). Analysis of the Constructional Components of Chanel Jacket Design. Fashion & Textile Research Journal, 20(3), 266-278.",
+    "url": "https://doi.org/10.5805/SFTI.2018.20.3.266",
+    "group": "academic"
+  },
+  {
+    "type": "academic",
+    "tag": "학술 문헌",
+    "citation": "Yang, J. W., & Lee, M. S. (2018). Multifaceted Study on the Aesthetic Composition of Chanel’s Design - Aspects of Realization of Public Fashion and Sense of Feminism -. JOURNAL OF THE KOREAN SOCIETY DESIGN CULTURE, 24(1), 377-390.",
+    "url": "http://dx.doi.org/10.18208/ksdc.2018.24.1.377",
+    "group": "academic",
+    "links": [
+      {
+        "label": "DOI 원문 보기",
+        "url": "http://dx.doi.org/10.18208/ksdc.2018.24.1.377"
+      },
+      {
+        "label": "KCI 상세 정보 보기",
+        "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002327002"
+      }
+    ]
+  },
+  {
+    "type": "academic",
+    "tag": "학술 문헌",
+    "citation": "Choi, J., & Lee, M. (2017). A Study on the Succession and Reinterpretation of Christian Dior’s ‘New Look.’ In Journal of the Korean Society of Costume (Vol. 67, Issue 2, pp. 68–87). The Korea Society of Costume.",
+    "url": "https://doi.org/10.7233/jksc.2017.67.2.068",
+    "group": "academic"
+  },
+  {
+    "type": "academic",
+    "tag": "학술 문헌",
+    "citation": "Choi, Y., & Park, J. (2019). Formativeness and Aesthetic Characteristics in Gucci Collections by Creative Directors. Journal of the Korean Society of Costume, 69(8), 1-15.",
+    "url": "https://doi.org/10.7233/jksc.2019.69.8.001",
     "group": "academic"
   },
   {
     "type": "collection",
+    "group": "main",
     "tag": "Chanel",
     "citation": "Chanel Spring 2026 Ready-to-Wear. Vogue Runway.",
     "url": "https://www.vogue.com/fashion-shows/spring-2026-ready-to-wear/chanel",
-    "detail": "Matthieu Blazy · 2026 S/S 데뷔 컬렉션",
-    "group": "main"
+    "detail": "Matthieu Blazy · 2026 S/S 데뷔 컬렉션"
   },
   {
     "type": "collection",
+    "group": "main",
     "tag": "Dior",
     "citation": "Christian Dior Spring 2026 Ready-to-Wear. Vogue Runway.",
     "url": "https://www.vogue.com/fashion-shows/spring-2026-ready-to-wear/christian-dior",
-    "detail": "Jonathan Anderson · 2026 S/S 데뷔 컬렉션",
-    "group": "main"
+    "detail": "Jonathan Anderson · 2026 S/S 데뷔 컬렉션 (여성)"
   },
   {
     "type": "collection",
+    "group": "main",
     "tag": "Gucci",
     "citation": "Gucci Spring 2026 Ready-to-Wear. Vogue Runway.",
     "url": "https://www.vogue.com/fashion-shows/spring-2026-ready-to-wear/gucci",
-    "detail": "Demna · 2026 S/S 데뷔 컬렉션",
-    "group": "main"
+    "detail": "Demna · 2026 S/S 데뷔 컬렉션"
   },
   {
     "type": "collection",
+    "group": "main",
+    "tag": "Chanel",
+    "citation": "샤넬 2026 S/S 런웨이 — Vogue Korea",
+    "detail": "Matthieu Blazy · 2026 S/S 런웨이 관련 기사",
+    "links": [
+      {
+        "label": "Vogue Korea 기사 보기",
+        "url": "https://www.vogue.co.kr/2025/10/20/%EA%B0%80%EC%9E%A5-%EA%B0%95%EB%A0%AC%ED%95%9C-%EB%8D%B0%EB%B7%94-%EB%A7%88%ED%8B%B0%EC%9C%A0-%EB%B8%94%EB%9D%BC%EC%A7%80%EC%9D%98-%EC%83%88%EB%A1%9C%EC%9A%B4-%EC%83%A4%EB%84%AC/"
+      }
+    ]
+  },
+  {
+    "type": "collection",
+    "group": "main",
+    "tag": "Dior",
+    "citation": "디올 2026 S/S 런웨이 — Instagram / The Cut",
+    "detail": "Jonathan Anderson · 2026 S/S 관련 이미지 및 리뷰",
+    "links": [
+      {
+        "label": "Instagram 이미지 보기",
+        "url": "https://www.instagram.com/p/DPW0fRICL3F/?img_index=6"
+      },
+      {
+        "label": "The Cut 리뷰 보기",
+        "url": "https://www.thecut.com/article/paris-fashion-week-review-cathy-horyn-on-dior-debut.html"
+      }
+    ]
+  },
+  {
+    "type": "collection",
+    "group": "main",
+    "tag": "Gucci",
+    "citation": "구찌 2026 S/S 컬렉션 — The Tiger (Gucci)",
+    "detail": "Demna · La Famiglia 단편 영상",
+    "links": [
+      {
+        "label": "Gucci 공식 영상 보기",
+        "url": "https://www.gucci.com/int/en/ms/short-film/video/"
+      }
+    ]
+  },
+  {
+    "type": "collection",
+    "group": "archive",
+    "tag": "Chanel",
+    "citation": "Chanel 2.55 Bag — Vogue Scandinavia",
+    "detail": "샤넬 아카이브 · 가브리엘 샤넬 2.55백",
+    "links": [
+      {
+        "label": "Vogue Scandinavia 보기",
+        "url": "https://www.voguescandinavia.com/articles/history-of-chanel-2-55-bag-through-imagery"
+      }
+    ]
+  },
+  {
+    "type": "collection",
+    "group": "archive",
     "tag": "Chanel",
     "citation": "Chanel Fall 1994 Ready-to-Wear. Vogue Runway.",
     "url": "https://www.vogue.com/fashion-shows/fall-1994-ready-to-wear/chanel",
-    "detail": "샤넬 아카이브 · 카멜리아",
-    "group": "archive"
+    "detail": "샤넬 아카이브 · 까멜리아"
   },
   {
     "type": "collection",
+    "group": "archive",
     "tag": "Chanel",
     "citation": "Chanel Spring 1993 Ready-to-Wear. Vogue Runway.",
     "url": "https://www.vogue.com/fashion-shows/spring-1993-ready-to-wear/chanel",
-    "detail": "샤넬 아카이브 · 클래식 테일러링/백",
-    "group": "archive"
+    "detail": "샤넬 아카이브 · 까멜리아, 트렁크, 실용적 빅백"
   },
   {
     "type": "collection",
+    "group": "archive",
+    "tag": "Bottega Veneta",
+    "citation": "Bottega Veneta Spring 2024 Ready-to-Wear. Vogue Runway.",
+    "url": "https://www.vogue.com/fashion-shows/spring-2024-ready-to-wear/bottega-veneta",
+    "detail": "샤넬 섹션 · 블라지의 선행 디자인 언어 / 그린 컬러, 프린지 디테일"
+  },
+  {
+    "type": "collection",
+    "group": "archive",
     "tag": "Bottega Veneta",
     "citation": "Bottega Veneta Spring 2025 Ready-to-Wear. Vogue Runway.",
     "url": "https://www.vogue.com/fashion-shows/spring-2025-ready-to-wear/bottega-veneta",
-    "detail": "샤넬 섹션 · 블라지의 선행 디자인 언어",
-    "group": "archive"
+    "detail": "샤넬 섹션 · 블라지의 선행 디자인 언어 / 프린지 디테일 햇"
   },
   {
     "type": "collection",
-    "tag": "Bottega Veneta",
-    "citation": "Bottega Veneta Spring 2023 Ready-to-Wear. Vogue Runway.",
-    "url": "https://www.vogue.com/fashion-shows/spring-2023-ready-to-wear/bottega-veneta",
-    "detail": "샤넬 섹션 · 프린지/장식적 표현",
-    "group": "archive"
-  },
-  {
-    "type": "collection",
+    "group": "archive",
     "tag": "Christian Dior",
-    "citation": "Christian Dior Fall 2025 Ready-to-Wear. Vogue Runway.",
-    "url": "https://www.vogue.com/fashion-shows/fall-2025-ready-to-wear/christian-dior",
-    "detail": "디올 아카이브 · 바 재킷",
-    "group": "archive"
+    "citation": "Christian Dior Fall 2022 Ready-to-Wear. Vogue Runway.",
+    "url": "https://www.vogue.com/fashion-shows/fall-2022-ready-to-wear/christian-dior",
+    "detail": "디올 아카이브 · 바 재킷, 뉴룩 실루엣"
   },
   {
     "type": "collection",
-    "tag": "Christian Dior",
-    "citation": "Christian Dior Fall 2019 Ready-to-Wear. Vogue Runway.",
-    "url": "https://www.vogue.com/fashion-shows/fall-2019-ready-to-wear/christian-dior",
-    "detail": "디올 아카이브 · 플라워 패턴",
-    "group": "archive"
-  },
-  {
-    "type": "collection",
-    "tag": "Christian Dior",
-    "citation": "Christian Dior Fall 2024 Ready-to-Wear. Vogue Runway.",
-    "url": "https://www.vogue.com/fashion-shows/fall-2024-ready-to-wear/christian-dior",
-    "detail": "디올 아카이브 · 플라워/패턴",
-    "group": "archive"
-  },
-  {
-    "type": "collection",
-    "tag": "Christian Dior",
-    "citation": "Christian Dior Spring 2024 Ready-to-Wear. Vogue Runway.",
-    "url": "https://www.vogue.com/fashion-shows/spring-2024-ready-to-wear/christian-dior",
-    "detail": "디올 아카이브 · 체크 패턴",
-    "group": "archive"
-  },
-  {
-    "type": "collection",
+    "group": "archive",
     "tag": "Loewe",
     "citation": "Loewe Fall 2024 Ready-to-Wear. Vogue Runway.",
     "url": "https://www.vogue.com/fashion-shows/fall-2024-ready-to-wear/loewe",
-    "detail": "디올 섹션 · 앤더슨의 선행 디자인 언어",
-    "group": "archive"
+    "detail": "디올 섹션 · 조나단의 선행 디자인 언어 / 재킷 디테일, 콘트라스트 라펠"
   },
   {
     "type": "collection",
+    "group": "archive",
+    "tag": "Christian Dior",
+    "citation": "Christian Dior Fall 2019 Ready-to-Wear. Vogue Runway.",
+    "url": "https://www.vogue.com/fashion-shows/fall-2019-ready-to-wear/christian-dior",
+    "detail": "디올 아카이브 · 플라워 패턴"
+  },
+  {
+    "type": "collection",
+    "group": "archive",
+    "tag": "Loewe",
+    "citation": "Loewe Fall 2024 Ready-to-Wear. Vogue Runway.",
+    "url": "https://www.vogue.com/fashion-shows/fall-2024-ready-to-wear/loewe",
+    "detail": "디올 섹션 · 조나단의 선행 디자인 언어 / 플라워 패턴"
+  },
+  {
+    "type": "collection",
+    "group": "archive",
+    "tag": "Christian Dior",
+    "citation": "Christian Dior Fall 2022 Ready-to-Wear. Vogue Runway.",
+    "url": "https://www.vogue.com/fashion-shows/fall-2022-ready-to-wear/christian-dior",
+    "detail": "디올 아카이브 · 체크 패턴"
+  },
+  {
+    "type": "collection",
+    "group": "archive",
     "tag": "Loewe",
     "citation": "Loewe Spring 2023 Ready-to-Wear. Vogue Runway.",
     "url": "https://www.vogue.com/fashion-shows/spring-2023-ready-to-wear/loewe",
-    "detail": "디올 섹션 · 앤더슨의 선행 디자인 언어",
-    "group": "archive"
+    "detail": "디올 섹션 · 조나단의 선행 디자인 언어 / 컷 아웃"
   },
   {
     "type": "collection",
+    "group": "archive",
+    "tag": "Dior",
+    "citation": "Dior Médaillon — Dior Official",
+    "detail": "디올 아카이브 · 메달리옹",
+    "links": [
+      {
+        "label": "Dior 공식 자료 보기",
+        "url": "https://www.dior.com/ko_kr/fashion/news-savoir-faire/folder-news-and-events/the-dior-medaillon"
+      }
+    ]
+  },
+  {
+    "type": "collection",
+    "group": "archive",
     "tag": "Gucci",
     "citation": "Gucci Fall 2018 Ready-to-Wear. Vogue Runway.",
     "url": "https://www.vogue.com/fashion-shows/fall-2018-ready-to-wear/gucci",
-    "detail": "구찌 아카이브 · 브랜드 코드",
-    "group": "archive"
+    "detail": "구찌 아카이브 · 모노그램"
   },
   {
     "type": "collection",
-    "tag": "Gucci",
-    "citation": "Gucci Spring 2018 Ready-to-Wear. Vogue Runway.",
-    "url": "https://www.vogue.com/fashion-shows/spring-2018-ready-to-wear/gucci",
-    "detail": "구찌 아카이브 · 브랜드 코드",
-    "group": "archive"
-  },
-  {
-    "type": "collection",
-    "tag": "Gucci",
-    "citation": "Gucci Fall 2015 Ready-to-Wear. Vogue Runway.",
-    "url": "https://www.vogue.com/fashion-shows/fall-2015-ready-to-wear/gucci",
-    "detail": "구찌 아카이브 · 웹 스트라이프/로퍼",
-    "group": "archive"
-  },
-  {
-    "type": "collection",
-    "tag": "Gucci",
-    "citation": "Gucci Spring 2005 Ready-to-Wear. Vogue Runway.",
-    "url": "https://www.vogue.com/fashion-shows/spring-2005-ready-to-wear/gucci",
-    "detail": "구찌 아카이브 · 재키 백/로퍼",
-    "group": "archive"
-  },
-  {
-    "type": "collection",
-    "tag": "Gucci",
-    "citation": "Gucci Fall 2011 Ready-to-Wear. Vogue Runway.",
-    "url": "https://www.vogue.com/fashion-shows/fall-2011-ready-to-wear/gucci",
-    "detail": "구찌 아카이브 · 퍼/오버코트",
-    "group": "archive"
-  },
-  {
-    "type": "collection",
-    "tag": "Gucci",
-    "citation": "Gucci Fall 2019 Ready-to-Wear. Vogue Runway.",
-    "url": "https://www.vogue.com/fashion-shows/fall-2019-ready-to-wear/gucci",
-    "detail": "구찌 아카이브 · 이브닝 룩",
-    "group": "archive"
-  },
-  {
-    "type": "collection",
+    "group": "archive",
     "tag": "Balenciaga",
     "citation": "Balenciaga Spring 2019 Ready-to-Wear. Vogue Runway.",
     "url": "https://www.vogue.com/fashion-shows/spring-2019-ready-to-wear/balenciaga",
-    "detail": "구찌 섹션 · 뎀나의 선행 디자인 언어",
-    "group": "archive"
+    "detail": "구찌 섹션 · 뎀나의 선행 디자인 언어 / 모노그램"
   },
   {
     "type": "collection",
+    "group": "archive",
+    "tag": "Gucci",
+    "citation": "Gucci Spring 2016 Ready-to-Wear. Vogue Runway.",
+    "url": "https://www.vogue.com/fashion-shows/spring-2016-ready-to-wear/gucci",
+    "detail": "구찌 아카이브 · 웹 스트라이프"
+  },
+  {
+    "type": "collection",
+    "group": "archive",
+    "tag": "Gucci",
+    "citation": "Gucci Fall 2014 Ready-to-Wear. Vogue Runway.",
+    "url": "https://www.vogue.com/fashion-shows/fall-2014-ready-to-wear/gucci",
+    "detail": "구찌 아카이브 · 홀스빗 슈즈"
+  },
+  {
+    "type": "collection",
+    "group": "archive",
+    "tag": "Gucci",
+    "citation": "Gucci Spring 2025 Ready-to-Wear. Vogue Runway.",
+    "url": "https://www.vogue.com/fashion-shows/spring-2025-ready-to-wear/gucci",
+    "detail": "구찌 아카이브 · 뱀부"
+  },
+  {
+    "type": "collection",
+    "group": "archive",
+    "tag": "Gucci",
+    "citation": "Gucci Horsebit 1953 Loafer — Official / Marie Claire Korea",
+    "detail": "구찌 아카이브 · 홀스빗 슈즈",
+    "links": [
+      {
+        "label": "Gucci 공식 상품 페이지 보기",
+        "url": "https://www.gucci.com/us/en/pr/women/shoes-for-women/loafers-lace-ups-for-women/flat-loafers-for-women/womens-horsebit-1953-loafer-p-817690AADT31000"
+      },
+      {
+        "label": "Marie Claire Korea 기사 보기",
+        "url": "https://www.marieclairekorea.com/fashion/2023/10/gucci-horsebit-1953-loafer/"
+      }
+    ]
+  },
+  {
+    "type": "collection",
+    "group": "archive",
+    "tag": "Gucci",
+    "citation": "Gucci Fall 2011 Ready-to-Wear. Vogue Runway.",
+    "url": "https://www.vogue.com/fashion-shows/fall-2011-ready-to-wear/gucci",
+    "detail": "구찌 아카이브 · 부르주아 퍼 아우터"
+  },
+  {
+    "type": "collection",
+    "group": "archive",
     "tag": "Balenciaga",
     "citation": "Balenciaga Fall 2019 Ready-to-Wear. Vogue Runway.",
     "url": "https://www.vogue.com/fashion-shows/fall-2019-ready-to-wear/balenciaga",
-    "detail": "구찌 섹션 · 뎀나의 선행 디자인 언어",
-    "group": "archive"
+    "detail": "구찌 섹션 · 뎀나의 선행 디자인 언어 / 부르주아 퍼 아우터"
   },
   {
     "type": "collection",
+    "group": "archive",
+    "tag": "Gucci",
+    "citation": "Gucci Fall 2004 Ready-to-Wear. Vogue Runway.",
+    "url": "https://www.vogue.com/fashion-shows/fall-2004-ready-to-wear/gucci",
+    "detail": "구찌 아카이브 · 이브닝 글래머"
+  },
+  {
+    "type": "collection",
+    "group": "archive",
     "tag": "Balenciaga",
     "citation": "Balenciaga Spring 2020 Ready-to-Wear. Vogue Runway.",
     "url": "https://www.vogue.com/fashion-shows/spring-2020-ready-to-wear/balenciaga",
-    "detail": "구찌 섹션 · 뎀나의 선행 디자인 언어",
-    "group": "archive"
+    "detail": "구찌 섹션 · 뎀나의 선행 디자인 언어 / 드라마틱 이브닝 가운 (극적 실루엣)"
+  },
+  {
+    "type": "official",
+    "group": "official",
+    "tag": "Chanel",
+    "citation": "Chanel Spring–Summer 2026 — The Looks",
+    "url": "https://www.chanel.com/kr/fashion/spring-summer-2026/l/FshCollection26S/the-looks/"
+  },
+  {
+    "type": "official",
+    "group": "official",
+    "tag": "Chanel",
+    "citation": "Gabrielle Chanel — CHANEL",
+    "url": "https://www.chanel.com/kr/about-chanel/gabrielle-chanel/"
+  },
+  {
+    "type": "official",
+    "group": "official",
+    "tag": "Dior",
+    "citation": "Dior Spring–Summer 2026 Women’s Ready-to-Wear Show",
+    "url": "https://www.dior.com/ko_kr/fashion/womens-fashion/ready-to-wear-shows/spring-summer-2026-ready-to-wear-show"
+  },
+  {
+    "type": "official",
+    "group": "official",
+    "tag": "Dior",
+    "citation": "Dior — The House of Dreams",
+    "url": "https://www.dior.com/ko_kr/fashion/the-house-of-dreams"
+  },
+  {
+    "type": "official",
+    "group": "official",
+    "tag": "Gucci",
+    "citation": "Gucci — La Famiglia Wardrobe",
+    "url": "https://www.gucci.com/kr/ko/nst/la-famiglia-wardrobe"
+  },
+  {
+    "type": "official",
+    "group": "official",
+    "tag": "Gucci",
+    "citation": "Gucci — History of Gucci",
+    "url": "https://www.gucci.com/kr/ko/nst/history-of-gucci"
+  },
+  {
+    "type": "article",
+    "group": "articles",
+    "tag": "Research",
+    "citation": "From creator to multitasking director: Opening of the “Creative + α” new CD era — Fashion Biz",
+    "url": "https://fashionbiz.co.kr/article/137804",
+    "detail": "Ahn, S. H. (2014, January 20)."
+  },
+  {
+    "type": "article",
+    "group": "articles",
+    "tag": "Chanel",
+    "citation": "가장 강렬한 데뷔, 마티유 블라지의 새로운 샤넬 — Vogue Korea",
+    "url": "https://www.vogue.co.kr/2025/10/20/%EA%B0%80%EC%9E%A5-%EA%B0%95%EB%A0%AC%ED%95%9C-%EB%8D%B0%EB%B7%94-%EB%A7%88%ED%8B%B0%EC%9C%A0-%EB%B8%94%EB%9D%BC%EC%A7%80%EC%9D%98-%EC%83%88%EB%A1%9C%EC%9A%B4-%EC%83%A4%EB%84%AC/",
+    "detail": ""
+  },
+  {
+    "type": "article",
+    "group": "articles",
+    "tag": "Chanel",
+    "citation": "우주의 기운이 모인 샤넬 2026 봄 여름 컬렉션 후기 — ELLE Korea",
+    "url": "https://www.elle.co.kr/article/1889932",
+    "detail": ""
+  },
+  {
+    "type": "article",
+    "group": "articles",
+    "tag": "Chanel",
+    "citation": "샤넬이 성층권을 뚫고 새로운 유니버스를 열었다 — W Korea",
+    "url": "https://www.wkorea.com/2025/10/10/%EC%83%A4%EB%84%AC%EC%9D%B4-%EC%84%B1%EC%B8%B5%EA%B6%8C%EC%9D%84-%EB%9A%AB%EA%B3%A0-%EC%83%88%EB%A1%9C%EC%9A%B4-%EC%9C%A0%EB%8B%88%EB%B2%84%EC%8A%A4%EB%A5%BC-%EC%97%B4%EC%97%88%EB%8B%A4-26-ss/",
+    "detail": ""
+  },
+  {
+    "type": "article",
+    "group": "articles",
+    "tag": "Chanel",
+    "citation": "Matthieu Blazy Debuts a New CHANEL Universe at Paris Fashion Week — S Magazine",
+    "url": "https://smagazineofficial.com/fashion/matthieu-blazy-debuts-a-new-chanel-universe-at-paris-fashion-week-1007624119",
+    "detail": ""
+  },
+  {
+    "type": "article",
+    "group": "articles",
+    "tag": "Chanel",
+    "citation": "CHANEL SS26 — Muse Magazine",
+    "url": "https://musemagazine.it/articles/chanel-ss26-en/",
+    "detail": ""
+  },
+  {
+    "type": "article",
+    "group": "articles",
+    "tag": "Dior",
+    "citation": "See all the looks from Jonathan Anderson’s Dior debut for SS26 — Vogue Scandinavia",
+    "url": "https://www.voguescandinavia.com/articles/dior-ss26",
+    "detail": ""
+  },
+  {
+    "type": "article",
+    "group": "articles",
+    "tag": "Dior",
+    "citation": "디올 2026 S/S 관련 기사 — WWD Korea",
+    "url": "https://www.wwdkorea.com/news/articleView.html?idxno=10044",
+    "detail": ""
+  },
+  {
+    "type": "article",
+    "group": "articles",
+    "tag": "Dior",
+    "citation": "조나단의 자유로운 비행 예고, 26 SS 디올 컬렉션 — W Korea",
+    "url": "https://www.wkorea.com/2025/10/07/%EC%A1%B0%EB%82%98%EB%8B%A8%EC%9D%98-%EC%9E%90%EC%9C%A0%EB%A1%9C%EC%9A%B4-%EB%B9%84%ED%96%89-%EC%98%88%EA%B3%A0-26-ss-%EB%94%94%EC%98%AC-%EC%BB%AC%EB%A0%89%EC%85%98/",
+    "detail": ""
+  },
+  {
+    "type": "article",
+    "group": "articles",
+    "tag": "Gucci",
+    "citation": "뎀나의 구찌 첫 컬렉션을 담아낸 단편영화, 더 타이거 — Vogue Korea",
+    "url": "https://www.vogue.co.kr/2025/09/24/%EB%8E%80%EB%82%98%EC%9D%98-%EA%B5%AC%EC%B0%8C-%EC%B2%AB-%EC%BB%AC%EB%A0%89%EC%85%98%EC%9D%84-%EB%8B%B4%EC%95%84%EB%82%B8-%EB%8B%A8%ED%8E%B8%EC%98%81%ED%99%94-%EB%8D%94-%ED%83%80%EC%9D%B4%EA%B1%B0/",
+    "detail": ""
+  },
+  {
+    "type": "article",
+    "group": "articles",
+    "tag": "Gucci",
+    "citation": "디렉터 바뀐 구찌, 새로운 출발점 ‘라 파밀리아’ 컬렉션 발표 — Fashion Biz",
+    "url": "https://fashionbiz.co.kr/article/219899",
+    "detail": ""
+  },
+  {
+    "type": "article",
+    "group": "articles",
+    "tag": "Gucci",
+    "citation": "뎀나의 구찌 첫 번째 컬렉션 공개 — Vogue Korea",
+    "url": "https://www.vogue.co.kr/2025/09/22/%EB%8E%80%EB%82%98%EC%9D%98-%EA%B5%AC%EC%B0%8C-%EC%B2%AB-%EB%B2%88%EC%A7%B8-%EC%BB%AC%EB%A0%89%EC%85%98-%EA%B3%B5%EA%B0%9C/",
+    "detail": ""
+  },
+  {
+    "type": "article",
+    "group": "articles",
+    "tag": "Gucci",
+    "citation": "구찌, ‘라 파밀리아’ 컬렉션 공개 — EYESMAG",
+    "url": "https://www.eyesmag.com/posts/162456/gucci-la-famiglia",
+    "detail": ""
   }
 ];
     const searchInput = document.getElementById('search');
-    let activeFilter='all';
+    let activeFilter = 'all';
 
-    async function copyCitation(value, btn){
-      try{
-        if(navigator.clipboard && window.isSecureContext){
-          await navigator.clipboard.writeText(value);
-        }else{
-          const field=document.createElement('textarea'); field.value=value;
-          field.style.position='fixed';field.style.opacity='0';document.body.appendChild(field);
-          field.select(); if(!document.execCommand('copy')) throw new Error('clipboard');field.remove();
-        }
-        btn.textContent='복사 완료 ✓';
-      }catch(e){btn.textContent='복사 실패';}
-      setTimeout(()=>{btn.textContent='인용 복사';},2000);
+    function entryLinks(entry) {
+      if (Array.isArray(entry.links)) return entry.links;
+      if (!entry.url) return [];
+      const labels={academic:'논문 원문 보기',collection:'Vogue Runway 보기',official:'공식 홈페이지 보기',article:'기사 원문 보기'};
+      return [{label:labels[entry.type]||'원문 보기',url:entry.url}];
     }
-    function makeRow(entry,idx){
+    function makeRow(entry, index) {
       const li=document.createElement('li');li.className='ref';
-      const num=document.createElement('div');num.className='ref-num';num.textContent=String(idx+1).padStart(2,'0');
+      const number=document.createElement('div');number.className='ref-num';number.textContent=String(index+1).padStart(2,'0');
       const main=document.createElement('div');main.className='ref-main';
       const meta=document.createElement('div');meta.className='ref-meta';
-      const pill=document.createElement('span');pill.className='pill';pill.textContent=entry.tag;meta.appendChild(pill);
-      const cit=document.createElement('p');cit.className='ref-text';cit.textContent=entry.citation;
-      main.append(meta,cit);
-      if(entry.detail){const detail=document.createElement('p');detail.className='ref-detail';detail.textContent=entry.detail;main.append(detail);}
-      const tools=document.createElement('div');tools.className='ref-tools';
-      if(entry.url && /^https:\/\//.test(entry.url)){
-        const a=document.createElement('a');a.className='tool-link';a.textContent=entry.type==='academic'?'원문 보기':'Vogue Runway 보기';
-        a.href=entry.url;a.target='_blank';a.rel='noopener noreferrer';tools.appendChild(a);
+      const tag=document.createElement('span');tag.className='pill';tag.textContent=entry.tag;
+      meta.append(tag);main.append(meta);
+      const citation=document.createElement('p');citation.className='ref-text';citation.textContent=entry.citation;main.append(citation);
+      if (entry.detail){const detail=document.createElement('p');detail.className='ref-detail';detail.textContent=entry.detail;main.append(detail)}
+      const links=entryLinks(entry);
+      if(links.length){
+        const tools=document.createElement('div');tools.className='ref-tools';
+        for(const link of links){
+          if(!/^https:\/\//i.test(link.url))continue;
+          const a=document.createElement('a');a.className='tool-link';
+          a.textContent=link.label;a.href=link.url;a.target='_blank';a.rel='noopener noreferrer';
+          tools.append(a);
+        }
+        if(tools.children.length)main.append(tools);
       }
-      const button=document.createElement('button');button.type='button';button.className='copy-btn';button.textContent='인용 복사';
-      button.addEventListener('click',()=>copyCitation(entry.citation,button));tools.append(button);main.append(tools);li.append(num,main);return li;
+      li.append(number,main);return li;
     }
     function render(){
-      const q=searchInput.value.trim().toLocaleLowerCase();
-      const match=references.filter(x=>[x.citation,x.tag,x.type,x.detail,x.group].join(' ').toLocaleLowerCase().includes(q));
-      document.getElementById('academic-section').hidden=activeFilter==='collection';
-      document.getElementById('collection-section').hidden=activeFilter==='academic';
-      let count=0;
-      for(const group of ['academic','main','archive']){
-        const entries=match.filter(x=>x.group===group);
-        const list=document.getElementById(group+'-list');list.replaceChildren();
-        const visible=activeFilter==='all'||(activeFilter==='academic'&&group==='academic')||(activeFilter==='collection'&&group!=='academic');
-        if(visible){count+=entries.length;entries.forEach((x,i)=>list.append(makeRow(x,i)));}
-        if(visible&&entries.length===0){const empty=document.createElement('li');empty.className='empty';empty.textContent='검색 결과가 없습니다.';list.append(empty);}
-        if(group!=='academic'){
-          document.getElementById(group+'-heading').hidden=entries.length===0 || !visible;
-          document.getElementById(group+'-caption').hidden=entries.length===0 || !visible;
+      const query=searchInput.value.trim().toLocaleLowerCase();
+      const matched=references.filter(item=>{
+        const haystack=[item.citation,item.tag,item.type,item.group,item.detail,...entryLinks(item).map(l=>l.label+' '+l.url)].join(' ').toLocaleLowerCase();
+        return haystack.includes(query);
+      });
+      let displayed=0;
+      for(const category of ['academic','collection','official','articles']){
+        const section=document.getElementById(category+'-section');
+        const entries=matched.filter(x=>category==='collection'?x.group==='main'||x.group==='archive':x.group===category);
+        const relevant=activeFilter==='all'||activeFilter===category;
+        section.hidden=!relevant||(query!==''&&entries.length===0);
+        if(!relevant)continue;
+        if(category==='collection'){
+          for(const group of ['main','archive']){
+            const groupList=document.getElementById(group+'-list');groupList.replaceChildren();
+            const groupEntries=entries.filter(x=>x.group===group);
+            groupEntries.forEach((item,index)=>groupList.append(makeRow(item,index)));
+            document.getElementById(group+'-heading').hidden=groupEntries.length===0;
+            document.getElementById(group+'-caption').hidden=groupEntries.length===0;
+            displayed+=groupEntries.length;
+          }
+        }else{
+          const list=document.getElementById(category+'-list');list.replaceChildren();
+          entries.forEach((item,index)=>list.append(makeRow(item,index)));
+          displayed+=entries.length;
         }
       }
-      document.getElementById('archive-note').hidden=q!==''||activeFilter==='academic';
-      document.getElementById('count').textContent=`표시 중인 자료 ${count}건 · 전체 ${references.length}건`;
+      document.getElementById('no-results').hidden=displayed!==0;
+      document.getElementById('count').textContent=`표시 중인 자료 ${displayed}건 · 전체 ${references.length}건`;
     }
-    document.querySelectorAll('[data-filter]').forEach(button=>{
-      button.addEventListener('click',()=>{
-        activeFilter=button.dataset.filter;
-        document.querySelectorAll('[data-filter]').forEach(b=>{
-          const on=b===button;b.classList.toggle('active',on);b.setAttribute('aria-pressed',String(on));
-        });render();
-      });
-    });
+    document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{
+      activeFilter=button.dataset.filter;
+      for(const item of document.querySelectorAll('[data-filter]')){
+        const active=item===button;item.classList.toggle('active',active);item.setAttribute('aria-pressed',String(active));
+      }
+      render();
+    }));
     searchInput.addEventListener('input',render);
     render();
+
   </script>
 </body>
 </html>
